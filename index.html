@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="vue-debug.js"></script>
+
+    <title>KRONOS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="customiser">
+            <div class="account"><img src="img/icons/face-24px.svg" alt="face" class="account-img"></div>
+            <div class="chosen"><img src="img/icons/grade-24px.svg" alt="star" class="star-chosen"></div>
+        </div>
+        <main>
+            <div class="grid-wrapper">
+                <div class="search-wrapper" id="searchAPP">
+                    <div class="search">
+                        <!--Возможно надо будет превратить в форму с Submit-->
+                        <input type="text" name="search_
+                        locality" class="search-locality"  v-model="searchStr" @keyup.enter="searchLocStr()">
+                        <div class="search-button" v-on:click="searchLocStr()"><img src="img/icons/search-24px.svg" alt="search" class="search-img"></div>
+                    </div>
+                    <div class="locality-item">
+                        <h1 class="locality-name">Москва <img src="img/icons/grade-24px.svg" alt="star-off" class="choose"></h1>
+                        
+                        <h2 class="locatyty-type">город</h2>
+                        <h2 class="federal-subject">г.о. Москва</h2>
+                        <p class="locality-time-zone">GMT +3</p>
+                        <h1 class="locality-time">13:45</h1>
+                    </div>
+                </div>    
+                <div class="chosen-wrapper">
+                    <div class="chosen-item">
+                        <h1 class="locality-name">Москва<img src="img/icons/grade-24px-filled.svg" alt="star-on" class="choose"></h1>
+                    
+                        <p class="locality-time-zone">GMT +3</p>
+                        <h1 class="locality-time">13:45</h1>
+                    </div>
+                
+                    <div class="chosen-item">
+                        <h1 class="locality-name">Санкт-Петербург<img src="img/icons/grade-24px-filled.svg" alt="star-on" class="choose"></h1>
+                        <p class="locality-time-zone">GMT +3</p>
+                        <h1 class="locality-time">13:45</h1>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            <div class="clr"></div>
+        </main>
+    </div>
+    <footer>
+
+        <div 
+        class="current-locality">
+        <img src="img/icons/room-24px.svg" alt="place" class="place">Самара</div>
+        <div class="current-time">14:33</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

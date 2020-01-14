@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color:#CCDCCF;
+    min-height: 100vh-10vh;
+    padding: 5vh 5vw;
+    .customiser{  
+        height: 40px+4px;
+        .account, .chosen{
+            background-color: #C1CBC3;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            margin-right: 1vw;
+            border: 2px solid transparent;
+        }
+        .account:hover, .chosen:hover{
+            border: 2px solid black;
+        }
+    }
+    .grid-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 2vh;
+        .chosen-wrapper{
+            min-width:30%;
+            background-color: #C1CBC3;
+            padding: 2%;
+            .chosen-item{
+                background-color: #CCDCCF;
+                padding:2vh 2vw;
+                margin-bottom: 2vh;
+                .choose:hover{
+                    outline: 2px solid black;
+                }
+            }
+        }
+        .search{
+            display: flex;
+            .search-locality{
+                height: 40px;
+                min-width:90%;
+                border: none;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            .search-button{
+                height: 40px;
+                width:40px;
+                display: inline-block;
+                background-color: #C1CBC3;
+                text-align: center;
+                .search-img{
+                    margin-top: 8px;;
+                }
+            }
+            .search-button:hover{
+                outline: 2px solid black;
+            }
+        }
+        .locality-item{
+            margin-top: 2vh;
+            width: 90%;
+            height: 100px;/*пересчитать высоту из шрифтов*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content:center;
+            .choose:hover{
+                outline: 2px solid black;
+            }
+
+            
+        }
+        .clr { 
+            height: 10vh; 
+        }
+    }
+}
+
+
+footer {
+    height: 10vh;
+    background-color: #C1CBC3;
+    margin-top: -10vh;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 5vw;
+    .current-locality{
+        font-size: 24px;
+    }
+    .current-time{
+        font-size: 20px;
+    }
+}

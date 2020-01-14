@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: #CCDCCF;
+  min-height: 90vh;
+  padding: 5vh 5vw;
+}
+.container .customiser {
+  height: 44px;
+}
+.container .customiser .account,
+.container .customiser .chosen {
+  background-color: #C1CBC3;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-right: 1vw;
+  border: 2px solid transparent;
+}
+.container .customiser .account:hover,
+.container .customiser .chosen:hover {
+  border: 2px solid black;
+}
+.container .grid-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2vh;
+}
+.container .grid-wrapper .chosen-wrapper {
+  min-width: 30%;
+  background-color: #C1CBC3;
+  padding: 2%;
+}
+.container .grid-wrapper .chosen-wrapper .chosen-item {
+  background-color: #CCDCCF;
+  padding: 2vh 2vw;
+  margin-bottom: 2vh;
+}
+.container .grid-wrapper .chosen-wrapper .chosen-item .choose:hover {
+  outline: 2px solid black;
+}
+.container .grid-wrapper .search {
+  display: flex;
+}
+.container .grid-wrapper .search .search-locality {
+  height: 40px;
+  min-width: 90%;
+  border: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.container .grid-wrapper .search .search-button {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: #C1CBC3;
+  text-align: center;
+}
+.container .grid-wrapper .search .search-button .search-img {
+  margin-top: 8px;
+}
+.container .grid-wrapper .search .search-button:hover {
+  outline: 2px solid black;
+}
+.container .grid-wrapper .locality-item {
+  margin-top: 2vh;
+  width: 90%;
+  height: 100px;
+  /*пересчитать высоту из шрифтов*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .grid-wrapper .locality-item .choose:hover {
+  outline: 2px solid black;
+}
+.container .grid-wrapper .clr {
+  height: 10vh;
+}
+footer {
+  height: 10vh;
+  background-color: #C1CBC3;
+  margin-top: -10vh;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 5vw;
+}
+footer .current-locality {
+  font-size: 24px;
+}
+footer .current-time {
+  font-size: 20px;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "locality-guid": "123456789",
+        "locality-name": "Москва",
+        "locality-type": "город",
+        "fedsubj-name": "Москва",
+        "fedsubj-type": "г.о.",
+        "time-zone": "3"
+    },
+    {
+        "locality-guid": "987654321",
+        "locality-name": "Самара",
+        "locality-type": "город",
+        "fedsubj-name": "Самарская",
+        "fedsubj-type": "обл.",
+        "time-zone": "4"
+    },
+    {
+        "locality-guid": "987654999",
+        "locality-name": "Сергеевка",
+        "locality-type": "деревня",
+        "fedsubj-name": "Самарская",
+        "fedsubj-type": "обл.",
+        "time-zone": "4"
+    }
+]
