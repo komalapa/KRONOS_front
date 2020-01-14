@@ -25,12 +25,12 @@
                         <div class="search-button" v-on:click="searchLocStr()"><img src="img/icons/search-24px.svg" alt="search" class="search-img"></div>
                     </div>
                     <div class="locality-item">
-                        <h1 class="locality-name">Москва <img src="img/icons/grade-24px.svg" alt="star-off" class="choose"></h1>
+                        <h1 class="locality-name">{{localityName}} <img v-bind:src="starOFF" v-bind:alt="starOFFalt" class="choose"></h1>
                         
-                        <h2 class="locatyty-type">город</h2>
-                        <h2 class="federal-subject">г.о. Москва</h2>
-                        <p class="locality-time-zone">GMT +3</p>
-                        <h1 class="locality-time">13:45</h1>
+                        <h2 class="locatyty-type">{{localityType}}</h2>
+                        <h2 class="federal-subject">{{fedsubjName}} {{fedsubjType}}</h2>
+                        <p class="locality-time-zone">{{timeZone}}</p>
+                        <h1 class="locality-time">{{localityTime}}</h1>
                     </div>
                 </div>    
                 <div class="chosen-wrapper">

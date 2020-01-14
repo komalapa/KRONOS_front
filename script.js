@@ -54,7 +54,10 @@ new Vue({
         localityType: "",
         fedsubjName: "",
         fedsubjType: "",
-        timeZone: ""
+        timeZone: "",
+        localityTime: "",
+        starOFF: "",
+        starOFFalt: ""
     },
     methods:{
         searchLocStr: function(){
@@ -68,6 +71,9 @@ new Vue({
             this.fedsubjName=found["fedsubj-name"];
             this.fedsubjType=found["fedsubj-type"];
             this.timeZone="GMT +"+found["time-zone"];
+            this.localityTime="13:45";
+            this.starOFF="img/icons/grade-24px.svg";
+            this.starOFFalt="star off";
 
             console.log(this);
         }
