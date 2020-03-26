@@ -1,0 +1,42 @@
+@import url("normalize.less");
+@fullWidth:1920px;
+@verticalPadding:30px;
+body{
+    width: @fullWidth;
+    margin: 0 auto;
+}
+
+.main-header{
+    background-color: rgb(74, 173, 180);
+    display: flex;
+    justify-content: space-between;
+    padding: @verticalPadding @fullWidth/10;
+    box-sizing: border-box;
+    align-items: center;
+    
+    &-title{
+        color:black;
+        
+    }
+    &-menu-list{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        &-item{
+            border-radius: 50%;
+            border: 2px solid khaki;
+            margin: 0 20px 0 0;
+        }
+        &-item:last-child{
+            margin: 0;
+        }
+    }
+
+}
+main{
+    background-color: grey;
+}
+.main-footer{
+    background-color: rgb(74, 173, 180);
+}
+

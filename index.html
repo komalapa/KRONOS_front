@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>KRONOS</title>
+</head>
+<body>
+    <header class="main-header">
+        <span class="main-header-title"> Kronos</span>
+        <nav class="main-header-menu">
+            <ul class="main-header-menu-list">
+                <li class="main-header-menu-list-favorites main-header-menu-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 7.13l.97 2.29.47 1.11 1.2.1 2.47.21-1.88 1.63-.91.79.27 1.18.56 2.41-2.12-1.28-1.03-.64-1.03.62-2.12 1.28.56-2.41.27-1.18-.91-.79-1.88-1.63 2.47-.21 1.2-.1.47-1.11.97-2.27M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg></li>
+                <li class="main-header-menu-list-account main-header-menu-list-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.25 13c0 .69-.56 1.25-1.25 1.25S7.75 13.69 7.75 13s.56-1.25 1.25-1.25 1.25.56 1.25 1.25zM15 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm7 .25c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM10.66 4.12C12.06 6.44 14.6 8 17.5 8c.46 0 .91-.05 1.34-.12C17.44 5.56 14.9 4 12 4c-.46 0-.91.05-1.34.12zM4.42 9.47c1.71-.97 3.03-2.55 3.66-4.44C6.37 6 5.05 7.58 4.42 9.47zM20 12c0-.78-.12-1.53-.33-2.24-.7.15-1.42.24-2.17.24-3.13 0-5.92-1.44-7.76-3.69C8.69 8.87 6.6 10.88 4 11.86c.01.04 0 .09 0 .14 0 4.41 3.59 8 8 8s8-3.59 8-8z"/></svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fixed-times">
+            <div class="fixed-times-item">
+                <span class="fixed-times-item-title">London</span>
+                <time class="fixed-times-item-time">00:00</time> <!-- Пока не уверена, что нужен будет атрибут datetime-->
+            </div>
+            <div class="fixed-times-item">
+                <span class="fixed-times-item-title">Moscow</span>
+                <time class="fixed-times-item-time">03:00</time> <!-- Пока не уверена, что нужен будет атрибут datetime-->
+            </div>
+            <div class="fixed-times-item">
+                <span class="fixed-times-item-title">Samara (current location)</span>
+                <time class="fixed-times-item-time">04:00</time> <!-- Пока не уверена, что нужен будет атрибут datetime-->
+            </div>
+        </section>
+        <section class="search">
+            <form class="search-form" action="">
+                <input type="search" class="search-form-input">
+                <select class="search-form-select-region" id="search-region">
+                    <option value="63">Самарская область</option>
+                    <option value="73">Ульяновская область</option>
+                    <option value="63">Самарская область</option>
+                    <option value="73">Ульяновская область</option>
+                    <option value="63">Самарская область</option>
+                    <option value="73">Ульяновская область</option>
+                    <option value="63">Самарская область</option>
+                    <option value="73">Ульяновская область</option>
+                </select>
+                <input class="search-form-submit" type="submit" value="Поиск"></input>
+                <button class="search-form-reset" value="Сброс"></button> <!--сброс и результатов тоже-->
+            </form>
+            <div class="search-results">
+                <details class="search-results-item">
+                    <summary class="search-results-item-short">
+                        <span class="search-results-item-title">DefaultCity</span>
+                        <time class="search-results-item-time">03:00</time>
+                    </summary>
+                    <span class="search-results-item-region">DefaultRegion</span>
+                    <span class="search-results-item-zone">+ 3 GMT</span>
+                </details>
+                <details class="search-results-item">
+                    <summary class="search-results-item-short">
+                        <span class="search-results-item-title">DefaultCity</span>
+                        <time class="search-results-item-time">03:00</time>
+                    </summary>
+                    <span class="search-results-item-region">DefaultRegion</span>
+                    <span class="search-results-item-zone">+ 3 GMT</span>
+                </details>
+                <details class="search-results-item">
+                    <summary class="search-results-item-short">
+                        <span class="search-results-item-title">DefaultCity</span>
+                        <time class="search-results-item-time">03:00</time>
+                    </summary>
+                    <span class="search-results-item-region">DefaultRegion</span>
+                    <span class="search-results-item-zone">+ 3 GMT</span>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="contacts">
+            <p class="contacts-text">Если Вы обнаружили ошибку напишите, пожалуйста, нам</p>
+            <ul class="contacts-list">
+                <li class="contacts-list-item"><a href="mailto:example@example.com">e-mail: example@example.com</a></li>
+                <li class="contacts-list-item"><a href="#">viber: 123456789</a></li>
+                <li class="contacts-list-item"><a href="#">telegram: 123456789</a></li>
+            </ul>
+        </section>
+        <section class="current-region">
+            <details class="current-region-info">
+                <summary class="current-region-info-title">
+                    <span class="current-region-info-title">DefaultCity</span>
+                    <time class="current-region-info-time">03:00</time>
+                </summary>
+                <span class="current-region-info-region">DefaultRegion</span>
+                <span class="current-region-info-zone">+ 3 GMT</span>
+                <span class="current-region-info-source">Browser info</span>
+            </details>
+        </section>
+        <section class="copyrights">
+            &copy;&nbsp;2020
+        </section>
+    </footer>
+    
+</body>
+</html>
