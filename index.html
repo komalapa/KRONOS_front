@@ -29,7 +29,7 @@
                 <time class="fixed-times-item-time">03:00</time> <!-- Пока не уверена, что нужен будет атрибут datetime-->
             </div>
             <div class="fixed-times-item">
-                <span class="fixed-times-item-title">Samara (current location)</span>
+                <span class="fixed-times-item-title current-location">Samara</span>
                 <time class="fixed-times-item-time">04:00</time> <!-- Пока не уверена, что нужен будет атрибут datetime-->
             </div>
         </section>
@@ -47,9 +47,36 @@
                     <option value="73">Ульяновская область</option>
                 </select>
                 <input class="search-form-submit" type="submit" value="Поиск"></input>
-                <button class="search-form-reset" value="Сброс"></button> <!--сброс и результатов тоже-->
+                <button class="search-form-reset" value="Сброс">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20">
+                        <path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/>
+                        <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg></button> <!--сброс и результатов тоже-->
             </form>
             <div class="search-results">
+                <details class="search-results-item">
+                    <summary class="search-results-item-short">
+                        <span class="search-results-item-title">DefaultCity</span>
+                        <time class="search-results-item-time">03:00</time>
+                    </summary>
+                    <span class="search-results-item-region">DefaultRegion</span>
+                    <span class="search-results-item-zone">+ 3 GMT</span>
+                </details>
+                <details class="search-results-item">
+                    <summary class="search-results-item-short">
+                        <span class="search-results-item-title">DefaultCity</span>
+                        <time class="search-results-item-time">03:00</time>
+                    </summary>
+                    <span class="search-results-item-region">DefaultRegion</span>
+                    <span class="search-results-item-zone">+ 3 GMT</span>
+                </details>
+                <details class="search-results-item">
+                    <summary class="search-results-item-short">
+                        <span class="search-results-item-title">DefaultCity</span>
+                        <time class="search-results-item-time">03:00</time>
+                    </summary>
+                    <span class="search-results-item-region">DefaultRegion</span>
+                    <span class="search-results-item-zone">+ 3 GMT</span>
+                </details>
                 <details class="search-results-item">
                     <summary class="search-results-item-short">
                         <span class="search-results-item-title">DefaultCity</span>
@@ -87,15 +114,19 @@
             </ul>
         </section>
         <section class="current-region">
-            <details class="current-region-info">
+           <!-- <details class="current-region-info">
                 <summary class="current-region-info-title">
                     <span class="current-region-info-title">DefaultCity</span>
                     <time class="current-region-info-time">03:00</time>
                 </summary>
-                <span class="current-region-info-region">DefaultRegion</span>
+                <span class="current-region-info-region fixed-times-item current-location">DefaultRegion</span>
                 <span class="current-region-info-zone">+ 3 GMT</span>
                 <span class="current-region-info-source">Browser info</span>
-            </details>
+            </details>-->
+            <div class="fixed-times-item">
+                <span class="fixed-times-item-title current-location">Samara</span>
+                <time class="fixed-times-item-time">04:00</time> <!-- Пока не уверена, что нужен будет атрибут datetime-->
+            </div>
         </section>
         <section class="copyrights">
             &copy;&nbsp;2020
