@@ -1,12 +1,19 @@
 @import url("normalize.less");
 @fullWidth:1920px;
 @verticalPadding:30px;
+@footer-height:250px;
 body{
     width: @fullWidth;
     margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
+    height: 100%;
 }
-
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
 .main-header{
     background-color: #C1CBC3;
     display: flex;
@@ -14,7 +21,8 @@ body{
     padding: @verticalPadding @fullWidth/10;
     box-sizing: border-box;
     align-items: center;
-    
+    flex-shrink: 0;
+    flex-grow: 0;
     &-title{
         color:darkolivegreen;
         font-size: 40px;
@@ -46,9 +54,12 @@ body{
 
 }
 main{
+    height: 100%;
     background-color: #CCDCCF;
-    padding: @verticalPadding @fullWidth/3 @verticalPadding @fullWidth/10;}
-    .fixed-times{
+    padding: @verticalPadding @fullWidth/3  @verticalPadding @fullWidth/10;
+    flex-grow: 1;
+}
+     .fixed-times{
         display: flex;
         justify-content: flex-start;
         padding: @verticalPadding 0;
@@ -84,7 +95,7 @@ main{
                 border:none;
                 box-shadow: 0 0 15px -5px darkolivegreen;
                 border-radius: 1px;
-                margin: 0 10px;
+                margin: 0 20px;
                 outline: none;
             }
             &-submit{
@@ -159,8 +170,11 @@ main{
     margin-right: 5px;
 }
 .main-footer{
+    flex-shrink: 0;
+    flex-grow: 0;
     background-color:#C1CBC3;
     padding: @verticalPadding @fullWidth/10;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

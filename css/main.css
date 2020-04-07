@@ -149,6 +149,13 @@ body {
   width: 1920px;
   margin: 0 auto;
   font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 .main-header {
   background-color: #C1CBC3;
@@ -157,6 +164,8 @@ body {
   padding: 30px 192px;
   box-sizing: border-box;
   align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .main-header-title {
   color: darkolivegreen;
@@ -185,8 +194,10 @@ body {
   margin: 0;
 }
 main {
+  height: 100%;
   background-color: #CCDCCF;
   padding: 30px 640px 30px 192px;
+  flex-grow: 1;
 }
 .fixed-times {
   display: flex;
@@ -224,7 +235,7 @@ main {
   border: none;
   box-shadow: 0 0 15px -5px darkolivegreen;
   border-radius: 1px;
-  margin: 0 10px;
+  margin: 0 20px;
   outline: none;
 }
 .search-form-submit {
@@ -296,8 +307,11 @@ main {
   margin-right: 5px;
 }
 .main-footer {
+  flex-shrink: 0;
+  flex-grow: 0;
   background-color: #C1CBC3;
   padding: 30px 192px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
